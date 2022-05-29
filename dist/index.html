@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+<script defer src="index.bundle.js"></script></head>
+<body>
+    <div class="app">
+        <div class="container">
+            <img class="app__logo"
+                 src="./images/logo.svg"
+                 width="80"
+                 height="80"
+                 alt="logo">
+            <h1 class="app__title">
+                Конвертер валют
+            </h1>
+
+            <div class="currency currency_brown app__currency">
+                <select class="currency__select"
+                        data-currency-name-from>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BYN">BYN</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="CZK">CZK</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GEL">GEL</option>
+                    <option value="HUF">HUF</option>
+                    <option value="ILS">ILS</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KZT">KZT</option>
+                    <option value="PLN">PLN</option>
+                    <option value="RUB">RUB</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD" selected>USD</option>
+                </select>
+                <input type="number"
+                       class="currency__value"
+                       value="1"
+                       data-currency-amount-from>
+            </div><!--.currency-->
+
+            <button type="button"
+                    class="swap app__swap" 
+                    data-swap>
+                <svg viewBox="0 0 48 48"
+                     class="swap__icon">
+                    <path d="M36 8l-8 8h6v14c0 2.21-1.79 4-4 4s-4-1.79-4-4V16c0-4.41-3.59-8-8-8s-8 3.59-8 8v14H4l8 8 8-8h-6V16c0-2.21 1.79-4 4-4s4 1.79 4 4v14c0 4.41 3.59 8 8 8s8-3.59 8-8V16h6l-8-8z" />
+                </svg>
+            </button>
+
+            <div class="currency currency_green app__currency">
+                <select class="currency__select"
+                        data-currency-name-to>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BYN">BYN</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="CZK">CZK</option>
+                    <option value="EUR" selected>EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GEL">GEL</option>
+                    <option value="HUF">HUF</option>
+                    <option value="ILS">ILS</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KZT">KZT</option>
+                    <option value="PLN">PLN</option>
+                    <option value="RUB">RUB</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input type="number"
+                       class="currency__value"
+                       value="0"
+                       readonly
+                       data-currency-amount-to>
+            </div><!--.currency-->
+
+            <div class="rate app__rate"
+                 data-rate>
+                1 USD = 0.932862 EUR
+            </div>
+        </div><!--.container-->
+    </div><!--.app-->
+</body>
+</html>
