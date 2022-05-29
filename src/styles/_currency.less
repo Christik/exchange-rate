@@ -1,0 +1,33 @@
+//
+// Currency
+//
+
+.currency {
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &_brown {
+        background: @color-brown;
+    }
+    &_green {
+        background: @color-green;
+        color: #fff;
+    }
+}
+.currency__select {
+    margin-left: -.5rem;
+
+    .currency_green & {
+        color: #fff;
+        background-image: url('@{path-images}/arrow-down-white.svg');
+    }
+}
+.currency__value {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: .02em;
+}

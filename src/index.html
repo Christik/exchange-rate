@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <img class="app__logo"
+                 src="./images/logo.svg"
+                 width="80"
+                 height="80"
+                 alt="logo">
+            <h1 class="app__title">
+                Конвертер валют
+            </h1>
+
+            <div class="currency currency_brown app__currency">
+                <select class="currency__select">
+                    <option>USD</option>
+                    <option>USD</option>
+                    <option>USD</option>
+                    <option>USD</option>
+                    <option>USD</option>
+                </select>
+                <div class="currency__value">
+                    100
+                </div>
+            </div><!--.currency-->
+
+            <button type="button"
+                    class="swap app__swap">
+                <svg viewBox="0 0 48 48"
+                     class="swap__icon">
+                    <path d="M36 8l-8 8h6v14c0 2.21-1.79 4-4 4s-4-1.79-4-4V16c0-4.41-3.59-8-8-8s-8 3.59-8 8v14H4l8 8 8-8h-6V16c0-2.21 1.79-4 4-4s4 1.79 4 4v14c0 4.41 3.59 8 8 8s8-3.59 8-8V16h6l-8-8z" />
+                </svg>
+            </button>
+
+            <div class="currency currency_green app__currency">
+                <select class="currency__select">
+                    <option>EUR</option>
+                    <option>EUR</option>
+                    <option>EUR</option>
+                    <option>EUR</option>
+                    <option>EUR</option>
+                    <option>EUR</option>
+                </select>
+                <div class="currency__value">
+                    589
+                </div>
+            </div><!--.currency-->
+
+            <div class="rate app__rate">
+                1 USD = 0.932 EUR
+            </div>
+        </div><!--.container-->
+    </div><!--.app-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+//
+// Swap
+//
+
+.swap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid .25rem fade(@body-color, 60%);
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.swap__icon {
+    display: block;
+    width: 60%;
+    height: 60%;
+
+    path {
+        fill: @body-color;
+    }
+}
+
+@media (hover: hover) {
+    .swap {
+        transition: border-color .2s, background-color .2s;
+    }
+    .swap__icon path {
+        transition: fill .2s;
+    }
+    .swap:hover {
+        background-color: @body-color;
+        border-color: fade(#fff, 20%);
+
+        .swap__icon path {
+            fill: #fff;
+        }
+    }
+}
